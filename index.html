@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/flaticon/flaticon.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/circle-progress.js"></script>
+  <title>DashX</title>
+</head>
+<body>
+  <div class="">
+    <nav class="navbar-side">
+      <div class="navbar-side_picture-section">
+        <div class="navbar-side_picture-section">
+          <img src="img/profile-img.jpg" alt="" >
+            <div class="dropdown navbar-side_picture-section__user-name">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Mark Haml
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Log out</a>
+              </div>
+          </div>
+        </div>
+        <div class="navbar-side__list">
+          <ul>
+            <li class="navbar-side__list__item">
+              <a href="" class="active">
+                <i class="flaticon-speed-meter"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="navbar-side__list__item">
+              <a href="">
+                <i class="flaticon-podium"></i>
+                <span>Leaderboard</span>
+              </a>
+            </li>
+            <li class="navbar-side__list__item">
+              <a href="">
+                <i class="flaticon-customer"></i>
+                <span>Rewards</span>
+                <span class="badge_c">
+                  <span class="badge__number">4</span>
+                </span>
+              </a>
+            </li>
+            <li class="navbar-side__list__item">
+              <a href="">
+                <i class="flaticon-bar-chart"></i>
+                <span>Stats</span>
+              </a>
+            </li>
+            <li class="navbar-side__list__item">
+              <a href="">
+                <i class="flaticon-discount"></i>
+                <span>Deals</span>
+              </a>
+            </li>
+            <li class="navbar-side__list__item">
+              <a href="">
+                <i class="flaticon-envelope"></i>
+                <span>Messages</span>
+                <span class="badge_c">
+                  <span class="badge__number">15</span>
+                </span>
+              </a>
+            </li>
+            <li class="navbar-side__list__item">
+              <a href="">
+                <i class="flaticon-coin"></i>
+                <span>Earning</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <nav class="top-nav">
+        <div class="logo">
+          <a href=""><i class="flaticon-menu-1"></i></a>
+          <a href=""><span>LOGO</span></a>
+        </div>
+        <div class="action-sec">
+          <a href="">
+            <i class="flaticon-settings"></i>
+          </a>
+          <a href="">
+            <i class="flaticon-technology"></i>
+          </a>
+        </div>
+      </nav>
+      <header>
+        <h1>Dashboard</h1>
+      </header>
+      <div class="main-content row">
+        <section class="myscore col-8 row">
+          <div class="col-12">
+            <h3>My Score</h3>
+          </div>
+          <div class="col-4 score-metric">
+            <div id="circle" class="circle global text-center">
+              <span>
+              </span>
+              <p></p>
+            </div>
+            <div class="score-metric__action-sec row text-center">
+              <div class="col-3">
+                <span><i class="flaticon-thumb-up"></i> 310</span>
+              </div>
+              <div class="col-3">
+                <span><i class="flaticon-communication"></i> 69</span>
+              </div>
+              <div class="col-3">
+                <span><i class="flaticon-profile"></i> 42</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 score-metric">
+            <div id="facebook" class="circle facebook text-center">
+              <span>
+              </span>
+              <p></p>
+            </div>
+            <div class="score-metric__action-sec row text-center">
+              <div class="col-3">
+                <span><i class="flaticon-thumb-up"></i> 8</span>
+              </div>
+              <div class="col-3">
+                <span><i class="flaticon-communication"></i> 36</span>
+              </div>
+              <div class="col-3">
+                <span><i class="flaticon-profile"></i> 12</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 score-metric">
+            <div id="instagram" class="circle text-center">
+              <span>
+              </span>
+              <p></p>
+            </div>
+            <div class="score-metric__action-sec row text-center">
+              <div class="col-3">
+                <span><i class="flaticon-thumb-up"></i> 200</span>
+              </div>
+              <div class="col-3">
+                <span><i class="flaticon-communication"></i> 20</span>
+              </div>
+              <div class="col-3">
+                <span><i class="flaticon-profile"></i> 18</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="myleaderboard col-8 row">
+          <div class="col-12">
+            <h3>My Leaderboard</h3>
+          </div>
+          <ul class="nav nav-tabs col-12" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#fashion">Fashion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#">Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#">Torronto</a>
+            </li>
+          </ul>
+          <div class="tab-content col-12">
+            <div class="tab-pane active"  id="fashion" role="tabpanel">
+                <div class="scrolling-container">
+                  <div class="leaderboard__item row">
+                    <div class="leaderboard__item__img-section">
+                      <img src="img/profile-img.jpg" alt="">
+                    </div>
+                    <div class="leaderboard__item__text-section">
+                      <span>Shizaf</span>
+                    </div>
+                    <div class="leaderboard__item__metric-section">
+                      <i class="arrow"></i>
+                      <span class="leaderboard__item__metric-section__circle">
+                        <span>
+                          73
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="leaderboard__item row">
+                    <div class="leaderboard__item__img-section">
+                      <img src="img/profile-img.jpg" alt="">
+                    </div>
+                    <div class="leaderboard__item__text-section">
+                      <span>Shizaf</span>
+                    </div>
+                    <div class="leaderboard__item__metric-section low">
+                      <i class="arrow"></i>
+                      <span class="leaderboard__item__metric-section__circle">
+                        <span>
+                          73
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="leaderboard__item row">
+                    <div class="leaderboard__item__img-section">
+                      <img src="img/profile-img.jpg" alt="">
+                    </div>
+                    <div class="leaderboard__item__text-section">
+                      <span>Shizaf</span>
+                    </div>
+                    <div class="leaderboard__item__metric-section intermediate">
+                      <i class="arrow"></i>
+                      <span class="leaderboard__item__metric-section__circle">
+                        <span>
+                          69
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="profile" role="tabpanel">...</div>
+            <div class="tab-pane" id="messages" role="tabpanel">...</div>
+            <div class="tab-pane" id="settings" role="tabpanel">...</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script>
+    $('.circle#circle').circleProgress({
+      value:.82,
+      size: 200,
+      startAngle: (-Math.PI /2),
+      fill: {
+        gradient: ["red", "orange"]
+      },
+      thickness: 10,
+      lineCap: 'round',
+    }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('span').html(Math.round(82 * progress));
+    $(this).find('p').html('Global')
+    });
+
+    $('#facebook').circleProgress({
+      value:.62,
+      size: 200,
+      startAngle: (-Math.PI /2),
+      fill: {
+        gradient: ["blue", "grey"]
+      },
+      thickness: 10,
+      lineCap: 'round',
+    }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('span').html(Math.round(62 * progress));
+    $(this).find('p').html('Facebook')
+    });
+
+    $('#instagram').circleProgress({
+      value:.76,
+      size: 200,
+      startAngle: (-Math.PI /2),
+      fill: {
+        gradient: ["#fbad50" , "#8a3ab9"  ]
+      },
+      thickness: 10,
+      lineCap: 'round',
+    }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('span').html(Math.round(76 * progress));
+    $(this).find('p').html('Instagram')
+    });
+
+</script>
+
+</body>
+</html>
