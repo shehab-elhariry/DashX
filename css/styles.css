@@ -6,14 +6,18 @@
   src: url(../fonts/Roboto-Regular.ttf);
 }
 
-.navbar-side {
+/*===============================
+           side nav
+===================================*/
 
+.navbar-side {
   width: 20%;
   border-right: 2px solid #f4f7f9;
   text-align: center;
   height: 100vh;
   display: inline-block;
   margin-right: -5px;
+  transition: .4s all;
 }
 
 .navbar-side_picture-section {
@@ -27,7 +31,10 @@
   border-radius: 50%;
   width: 100px;
   display: inline-block;
+  transition: .4s all;
 }
+
+
 
 .navbar-side_picture-section__user-name {
   display: inline-block !important;
@@ -102,11 +109,46 @@
   right: 10%;
 }
 
+/*===============================
+           navbar side toggle
+===================================*/
+
+.navbar-side.collapsed {
+  width: 5%;
+}
+
+.navbar-side.collapsed .navbar-side__list__item a span {
+  display: none;
+
+}
+
+.navbar-side.collapsed .navbar-side__list__item a i {
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar-side.collapsed .navbar-side_picture-section img{
+  border-radius: 50%;
+  width: 60px;
+  display: inline-block;
+}
+
+.navbar-side.collapsed .navbar-side_picture-section__user-name  button {
+  display: none;
+}
+
+
 .content {
   display: inline-block;
   width: 80%;
   vertical-align: top;
+  /*transition: 0.2s all;*/
 }
+
+.navbar-side.collapsed + .content {
+  width: 95%;
+}
+
 
 .top-nav {
   width: 100%;
@@ -275,12 +317,11 @@ body{
 }
 
 .myleaderboard h3 {
-
   color: #343434;
-      font-size: 22px;
-      padding: 30px;
-      padding-left: 30px;
-      display: inline-block;
+  font-size: 22px;
+  padding: 30px;
+  padding-left: 30px;
+  display: inline-block;
 }
 
 
@@ -323,7 +364,7 @@ body{
  @media all and (min-width: 1200px) {
 
    .row {
-     margin-right: -15px;
+     margin-right: 0px;
      margin-left: 0px;
    }
  }
